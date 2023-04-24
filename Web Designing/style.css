@@ -55,6 +55,7 @@ button{
     position: absolute;
     display: none;
     background-color: aqua;
+    left: 110px;
 }
 .down-2:hover .list-2{
     display: block;

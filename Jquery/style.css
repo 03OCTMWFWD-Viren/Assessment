@@ -1,0 +1,85 @@
+/* basic utilities */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+img {
+    width: 50%;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* navbar css start fromm here  */
+.navmenu {
+    display: flex;
+    text-align: center;
+    column-gap: 50px;
+    margin-right: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.nav-item {
+    transition: 0.7s ease;
+}
+
+.nav-item:hover {
+    color: brown;
+}
+
+.hamburger {
+    font-size: 30px;
+    display: none;
+}
+
+#hide {
+    display: none;
+
+}
+
+.m-menu {
+    position: absolute;
+    left: 100px;
+    top: 120px;
+
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navmenu {
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navmenu {
+        display: flex;
+    }
+}
